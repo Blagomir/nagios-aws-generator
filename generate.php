@@ -34,6 +34,14 @@ $instances = [];
 foreach ($result['Reservations'] as $k => $v)
 {
 
+    /**
+     * We do not need instances without Public IP
+     */
+    if (!isset($v['Instances'][0]['PublicIpAddress']))
+    {
+        continue;
+    }
+
     $instanceServices = '';
 
     /**
