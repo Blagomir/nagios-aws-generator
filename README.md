@@ -6,3 +6,9 @@ Simple PHP library which will help you generate hosts and services nagios files 
  export AWS_KEY=YOUR_AWS_ACCESS_KEY
 
  export AWS_SECRET=YOUR_AWS_ACCESS_KEY_SECRET
+
+
+
+ To run in the console:
+
+ php generate.php
