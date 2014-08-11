@@ -98,7 +98,7 @@ foreach ($instances as $k => $v)
         {
             $serviceTemplate = file_get_contents('templates/service.'.$service.'.template');
             $serviceTemplate = str_replace('{hostname}', $instance->name, $serviceTemplate);
-            $outputServices = $serviceTemplate."\n\n";
+            $outputServices .= $serviceTemplate."\n\n";
         }
 
     }

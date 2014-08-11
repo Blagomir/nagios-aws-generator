@@ -1,7 +1,7 @@
 define service{
         use                             generic-service
         host_name                       {hostname}
-        service_description             Load AVG
+        service_description             Root partition space
         check_command                   check_nrpe!check_root_partition
         contact_groups                  admins
         }
