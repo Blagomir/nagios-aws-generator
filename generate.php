@@ -90,7 +90,7 @@ foreach ($instances as $k => $v)
 
     $tmp = $hostTemplate;
     $tmp = str_replace('{hostname}', $instance->name, $tmp);
-    $tmp = str_replace('{alias}', $instance->id, $tmp);
+    $tmp = str_replace('{alias}', $instance->name, $tmp);
     $tmp = str_replace('{IP}', $instance->IP, $tmp);
 
     $outputHosts .= $tmp."\n\n";
