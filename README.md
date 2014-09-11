@@ -4,15 +4,16 @@
 Simple PHP library which will help you generate hosts and services nagios files for nagios3
 
 
- In order to use this, you need to export two variables:
+# How to use
+
+ In order to use this, you need to export two variables and run the console command below.
 
  export AWS_KEY=YOUR_AWS_ACCESS_KEY
 
  export AWS_SECRET=YOUR_AWS_ACCESS_KEY_SECRET
 
 
-
- Run in the console:
+ Run this the console:
 
 ```bash
  php generate.php
@@ -21,14 +22,12 @@ Simple PHP library which will help you generate hosts and services nagios files 
 
  The generator will find all of your instances which have tag "nagios" no matter what the value is.
 
- The proper value could be:
- check_load
+ The proper value could be "check_load" or if you wish to have more than one service checked on that instance add "check_load|check_root_partition" (divide services with pipe "|")
 
- or if you wish to have more than 1 service checked on that instance:
+# Templates
 
- check_load|check_root_partition
+You need template file matching the service name you want to execute.
 
-
- You need template file called service.check_load.template in the templates folder.
+For "check_load" service you need "templates/service.check_load.template"
 
  You can create template files based on your setup.
