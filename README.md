@@ -24,12 +24,12 @@ Simple PHP library which will help you generate hosts and services configuration
 
  The generator will find all of your instances which have tag "nagios" no matter what the value is.
 
- The proper value could be "check_load" or if you wish to have more than one service checked on that instance add "check_load|check_root_partition" (divide services with pipe "|")
+ The proper value could be "*check_load*" or if you wish to have more than one service checked on that instance add "*check_load|check_root_partition*" (divide services with pipe "|")
 
 # Templates
 
 You need template file matching the service name you want to execute.
 
-For "check_load" service you need "templates/service.check_load.template"
+For "*check_load*" service you need "*templates/service.check_load.template*"
 
  You can create template files based on your setup.
