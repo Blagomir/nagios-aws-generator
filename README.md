@@ -15,7 +15,7 @@ Simple PHP library which will help you generate hosts and services configuration
 ````
 
 
- Run this the console:
+ Run the generator:
 
 ```bash
  php generate.php
