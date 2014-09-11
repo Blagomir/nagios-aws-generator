@@ -1,16 +1,18 @@
 # Description
 
 
-Simple PHP library which will help you generate hosts and services nagios files for nagios3
+Simple PHP library which will help you generate hosts and services configuration files for nagios3 based on your AWS setup.
 
 
 # How to use
 
  In order to use this, you need to export two variables and run the console command below.
 
+```bash
  export AWS_KEY=YOUR_AWS_ACCESS_KEY
 
  export AWS_SECRET=YOUR_AWS_ACCESS_KEY_SECRET
+````
 
 
  Run this the console:
