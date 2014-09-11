@@ -11,8 +11,9 @@ Simple PHP library which will help you generate hosts and services nagios files 
 
  Run in the console:
 
+```bash
  php generate.php
-
+````
 
 
  The generator will find all of your instances which have tag "nagios" no matter what the value is.
