@@ -1,0 +1,7 @@
+define service{
+        use                             generic-service
+        host_name                       {hostname}
+        service_description             Load AVG
+        check_command                   check_nrpe!check_load
+        contact_groups                  admins
+        }

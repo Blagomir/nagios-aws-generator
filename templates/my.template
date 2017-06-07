@@ -1,0 +1,9 @@
+define host{
+	use             {nagiosServerType} 
+	host_name       {Hostname}
+	alias           {InstanceId}
+	address         {IP}
+	hostgroups      {System} 
+	_instance_id    {InstanceId} 
+	_region         {Region} 
+        }
